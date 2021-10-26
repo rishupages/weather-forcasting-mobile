@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather_icon"></string>
+    <string name="temperature">O*C</string>
+    <string name="feels_Like">feels Like:</string>
+    <string name="weatherCondition">Description:</string>
+    <string name="cityName">city Name:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="search_city">Search For a City</string>
+
+
+
+</resources>

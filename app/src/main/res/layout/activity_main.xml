@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/weather_icon"
+        android:src="@drawable/finding">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame">
+
+        <TextView
+            android:id="@+id/search_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/search_city"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="@string/temperature"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/feels_Like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:paddingStart="30sp"
+        android:paddingEnd="0dp"
+        android:text="@string/feels_Like"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/weatherCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:paddingStart="30sp"
+        android:paddingEnd="0dp"
+        android:text="@string/weatherCondition"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:paddingStart="30sp"
+        android:paddingEnd="0dp"
+        android:text="@string/cityName"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/humdity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:paddingStart="30sp"
+        android:paddingEnd="0dp"
+        android:text="@string/humidity"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:paddingStart="30sp"
+        android:paddingEnd="0dp"
+        android:text="@string/pressure"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="italic"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignTop="@id/cityName"
+        android:layout_marginTop="498dp"
+        android:orientation="horizontal"></LinearLayout>
+
+</RelativeLayout>
